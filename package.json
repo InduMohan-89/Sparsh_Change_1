@@ -1,9 +1,13 @@
 {
+  "homepage": "http://InduMohan.github.io/Sparsh-App---1",
   "name": "change",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+
     "start": "expo start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
@@ -22,7 +26,8 @@
     "react-native-screens": "~3.18.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "gh-pages": "^4.0.0"
   },
   "private": true
 }
